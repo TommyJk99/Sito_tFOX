@@ -7,7 +7,7 @@
 }
 * a {
   text-decoration: none;
-  color: #ff9d00;
+  color: #ffffff;
 }
 
 * p {
@@ -42,7 +42,7 @@ header {
 .navbar img {
   width: 3rem;
   object-fit: cover;
-  margin-top: 0.35rem;
+  margin-top: 0.2rem;
 }
 
 .navbar a {
@@ -93,16 +93,16 @@ h1 {
 
 .best-products {
   margin-bottom: 5rem;
-
   margin-top: -4rem;
 }
 
 /*TOP5 SECTION*/
 
-.top5-flex {
+.top5-flex-wrap {
   display: flex;
-  gap: 2rem;
+  gap: 3rem;
   flex-wrap: wrap;
+  margin-left: 8rem;
 }
 
 .product-box {
@@ -111,8 +111,9 @@ h1 {
   width: 18rem;
   height: 22rem;
   background-color: #ededec;
-  margin-left: 8rem;
   border-radius: 12px;
+  overflow: hidden;
+  padding-bottom: 0.5rem;
 }
 
 .product {
@@ -131,6 +132,41 @@ h1 {
 }
 
 .phone-brand {
+  font-weight: bold;
+}
+
+.description {
+  margin-left: -2rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.product-box {
+  transition: transform 500ms ease-out;
+}
+.product-box:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.buy-button {
+  position: absolute;
+  top: 3rem;
+  right: -2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 2rem;
+  background-color: #f99c1b;
+  color: white;
+  border-radius: 50px;
+}
+.buy-button:hover {
+  filter: brightness(0.9);
 }
 
 /*classi riutilizzabili*/
@@ -148,6 +184,18 @@ h1 {
 
 .align-center {
   text-align: center;
+}
+
+.green {
+  color: rgb(50, 223, 53);
+}
+
+.red {
+  color: red;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
 }
 
 /*ANIMATION of x*/
@@ -199,17 +247,17 @@ h1 {
   }
 }
 .first-x {
-  animation: first-x-animation 4800ms;
+  animation: first-x-animation 4200ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 .second-x {
-  animation: second-x-animation 4800ms;
+  animation: second-x-animation 4200ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 .third-x {
-  animation: third-x-animation 4800ms;
+  animation: third-x-animation 4200ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
