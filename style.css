@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+* a {
+  text-decoration: none;
+  color: #ff9d00;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  margin-top: 8rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/*NAVBAR*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 4rem;
+  padding: 0.2rem 1rem;
+  background: rgb(255, 255, 255);
+  box-shadow: 0px -1px 14px 4px rgba(0, 0, 0, 0.65);
+  margin-bottom: 5rem;
+}
+
+.navbar img {
+  width: 3rem;
+  object-fit: cover;
+  margin-top: 0.35rem;
+}
+
+.navbar a {
+  position: relative;
+  width: max-content;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 15px;
+  padding: 0.4rem 0.5rem;
+  color: #222322;
+  line-height: -10px;
+  transition: color 300ms ease-out;
+}
+
+.c-invert:hover {
+  color: #f99c1b;
+}
+
+/*HOME*/
+
+.img-phone-box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 35rem;
+  position: relative;
+}
+
+.img-phone-box img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+h1 {
+  position: absolute;
+  top: 5rem;
+  left: 12rem;
+  font-size: 4rem;
+}
+
+.img-phone-box P {
+  position: absolute;
+  top: 11rem;
+  left: 15rem;
+  font-size: 2rem;
+}
+
+/*classi riutilizzabili*/
+.orange {
+  color: #f99c1b;
+}
+
+.bigger-size {
+  font-size: 2.6rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/*ANIMATION of x*/
+@keyframes first-x-animation {
+  0% {
+    color: #000000;
+  }
+  20% {
+    color: #f99c1b;
+  }
+  40% {
+    color: #000000;
+  }
+  100% {
+    color: #000000;
+  }
+}
+
+@keyframes second-x-animation {
+  0% {
+    color: #000000;
+  }
+  20% {
+    color: #000000;
+  }
+  40% {
+    color: #f99c1b;
+  }
+  100% {
+    color: #000000;
+  }
+}
+
+@keyframes third-x-animation {
+  0% {
+    color: #000000;
+  }
+  20% {
+    color: #000000;
+  }
+  40% {
+    color: #000000;
+  }
+  60% {
+    color: #f99c1b;
+  }
+  100% {
+    color: #000000;
+  }
+}
+.img-phone-box .first-x {
+  animation: first-x-animation 4800ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.img-phone-box .second-x {
+  animation: second-x-animation 4800ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.img-phone-box .third-x {
+  animation: third-x-animation 4800ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
