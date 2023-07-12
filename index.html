@@ -16,12 +16,16 @@
           <div><a href="#TOP 5" class="c-invert">TOP 5</a></div>
           <div><a href="#PRODUCTS" class="c-invert">PRODUCTS</a></div>
           <div><a href="#CONNECT" class="c-invert">CONNECT</a></div>
-          <div><button type="button" onclick="">7</button></div>
-          <div><button type="button" onclick="">8</button></div>
-          <div><button type="button" onclick="">9</button></div>
-          <div><button type="button" onclick="">10</button></div>
-          <div><button type="button" onclick="">11</button></div>
-          <div><button type="button" onclick="">12</button></div>
+          <div><button type="button" onclick="h1Text()">7</button></div>
+          <div>
+            <button type="button" onclick="backgroundColor()">8</button>
+          </div>
+          <div><button type="button" onclick="changeAddress()">9</button></div>
+          <div><button type="button" onclick="linkBold()">10</button></div>
+          <div><button type="button" onclick="hideImagesTab()">11</button></div>
+          <div>
+            <button type="button" onclick="randomColorPriceTab()">12</button>
+          </div>
         </div>
       </nav>
     </header>
@@ -59,7 +63,7 @@
             <span class="bold">€999,00</span>
             <span class="green">Avaiable now ✦</span>
             <div class="buy-button">
-              <a href="">BUY</a>
+              <a href="https://www.amazon.nl/">BUY</a>
             </div>
           </div>
         </div>
@@ -73,7 +77,7 @@
             <span class="bold">€899,99</span>
             <span class="green">Avaiable now ✦</span>
             <div class="buy-button">
-              <a href="">BUY</a>
+              <a href="https://www.amazon.nl/">BUY</a>
             </div>
           </div>
         </div>
@@ -87,7 +91,7 @@
             <span class="bold">€799,99</span>
             <span class="red">Not avaiable💔</span>
             <div class="buy-button">
-              <a href="">BUY</a>
+              <a href="https://www.amazon.nl/">BUY</a>
             </div>
           </div>
         </div>
@@ -101,7 +105,7 @@
             <span class="bold">€600,00</span>
             <span class="green">Avaiable now ✦</span>
             <div class="buy-button">
-              <a href="">BUY</a>
+              <a href="https://www.amazon.nl/">BUY</a>
             </div>
           </div>
         </div>
@@ -115,7 +119,7 @@
             <span class="bold">€749,00</span>
             <span class="green">Avaiable now ✦</span>
             <div class="buy-button">
-              <a href="">BUY</a>
+              <a href="https://www.amazon.nl/">BUY</a>
             </div>
           </div>
         </div>
@@ -145,58 +149,65 @@
         <td class="adjust-number">#2</td>
         <td><img src="./img/phone2.png" alt="phone2" /></td>
         <td class="adjust-name">iFox12 Plus</td>
-        <td>€899,00</td>
+        <td class="adjust-price">€899,00</td>
         <td class="green">avaiable</td>
       </tr>
       <tr class="row-color">
         <td class="adjust-number">#3</td>
         <td><img src="./img/phone3.png" alt="phone3" /></td>
         <td class="adjust-name">iFox13 Supah</td>
-        <td>€799,99</td>
+        <td class="adjust-price">€799,99</td>
         <td class="red">not avaiable</td>
       </tr>
       <tr>
         <td class="adjust-number">#4</td>
         <td><img src="./img/phone4.png" alt="phone4" /></td>
         <td class="adjust-name">iFox12 Half +</td>
-        <td>€600,00</td>
+        <td class="adjust-price">€600,00</td>
         <td class="green">avaiable</td>
       </tr>
       <tr class="row-color">
         <td class="adjust-number">#5</td>
         <td><img src="./img/phone5.png" alt="phone5" /></td>
         <td class="adjust-name">XiaoFox Life</td>
-        <td>€599,00</td>
+        <td class="adjust-price">€599,00</td>
         <td class="green">avaiable</td>
       </tr>
       <tr>
         <td class="adjust-number">#6</td>
         <td><img src="./img/phone1.png" alt="phone1" /></td>
         <td class="adjust-name">FoxyGalaxy</td>
-        <td>€499,00</td>
+        <td class="adjust-price">€499,00</td>
         <td class="green">avaiable</td>
       </tr>
       <tr class="row-color">
         <td class="adjust-number">#7</td>
         <td><img src="./img/phone2.png" alt="phone2" /></td>
         <td class="adjust-name">iFox13 Mini</td>
-        <td>€949,00</td>
+        <td class="adjust-price">€949,00</td>
         <td class="red">not avaiable</td>
       </tr>
       <tr>
         <td class="adjust-number">#8</td>
         <td><img src="./img/phone3.png" alt="phone3" /></td>
         <td class="adjust-name">iFox13 Legit</td>
-        <td>€800,00</td>
+        <td class="adjust-price">€800,00</td>
         <td class="green">avaiable</td>
       </tr>
     </table>
+    <!--TEXTBOX-->
+    <p class="align-center padding-top-bottom">
+      <span class="orange bigger-size bold"> YOUR </span>
+      OPINION IS IMPORTANT!✍️
+    </p>
+    <textarea name="" id="" placeholder="Don't be shy!"></textarea>
+    <button name="form">SEND</button>
     <!--FOOTER-->
     <footer>
       <span class="footer">TFOX</span>
       <h2>Come and find us 🥰️</h2>
-      <p class="footer">Spaarndammerstraat</p>
-      <p class="footer">1013 SR Amsterdam</p>
+      <p class="footer address">Spaarndammerstraat</p>
+      <p class="footer address">1013 SR Amsterdam</p>
       <p class="footer">+39 333 211 234 110</p>
       <p class="footer">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, nemo
@@ -208,5 +219,6 @@
         obcaecati.
       </p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
