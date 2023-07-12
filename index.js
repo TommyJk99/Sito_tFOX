@@ -16,7 +16,6 @@ function linkBold() {
   const links = document.querySelectorAll("a:not(.c-invert)");
   for (const link of links) {
     link.style.fontWeight = "bold";
-    link.style.color = "blue";
   }
 }
 
